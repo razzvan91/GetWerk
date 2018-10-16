@@ -53,7 +53,7 @@
             <connections>
                 <outlet property="detailsFlowCollectionView" destination="xPH-pc-JcI" id="L5x-Ej-H9w"/>
             </connections>
-            <point key="canvasLocation" x="-12.800000000000001" y="-27.436281859070466"/>
+            <point key="canvasLocation" x="-12.800000000000001" y="-27.886056971514247"/>
         </collectionViewCell>
     </objects>
 </document>

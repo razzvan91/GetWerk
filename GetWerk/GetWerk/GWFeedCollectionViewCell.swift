@@ -28,7 +28,7 @@ class GWFeedCollectionViewCell: UICollectionViewCell {
     }
 }
 
-extension GWFeedCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension GWFeedCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 2
     }
@@ -43,6 +43,10 @@ extension GWFeedCollectionViewCell: UICollectionViewDataSource, UICollectionView
             cell.cellView.backgroundColor = UIColor.orange
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 150.0, height: 240.0)
     }
     
     
