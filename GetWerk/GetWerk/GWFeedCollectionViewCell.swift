@@ -11,9 +11,39 @@ import UIKit
 class GWFeedCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var detailsFlowCollectionView: UICollectionView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.label.text = "safdd"
+        detailsFlowCollectionView.dataSource = self
+        detailsFlowCollectionView.delegate = self
+        detailsFlowCollectionView.register(UINib(nibName: "DetailsFeedCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DetailsFeed")
+        
+        
     }
+    
+    override func prepareForReuse() {
+        detailsFlowCollectionView.dataSource = nil
+        detailsFlowCollectionView.delegate = nil
+    }
+}
+
+extension GWFeedCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = detailsFlowCollectionView.dequeueReusableCell(withReuseIdentifier: "DetailsFeed", for: indexPath) as! GWDetailsFeedCollectionViewCell
+        
+        if indexPath.row == 0{
+            cell.cellView.backgroundColor = UIColor.yellow
+        } else {
+            cell.cellView.backgroundColor = UIColor.orange
+        }
+        return cell
+    }
+    
+    
 }

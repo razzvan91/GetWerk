@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		269EAD132175FD9B005A2192 /* DetailsFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 269EAD122175FD9B005A2192 /* DetailsFeedCollectionViewCell.xib */; };
+		269EAD152175FDEF005A2192 /* GWDetailsFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269EAD142175FDEF005A2192 /* GWDetailsFeedCollectionViewCell.swift */; };
 		F917C7F92175B6050090A488 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917C7F82175B6050090A488 /* AppDelegate.swift */; };
 		F917C7FB2175B6050090A488 /* GWFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F917C7FA2175B6050090A488 /* GWFeedViewController.swift */; };
 		F917C7FE2175B6050090A488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F917C7FC2175B6050090A488 /* Main.storyboard */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		269EAD122175FD9B005A2192 /* DetailsFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsFeedCollectionViewCell.xib; sourceTree = "<group>"; };
+		269EAD142175FDEF005A2192 /* GWDetailsFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWDetailsFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		F917C7F52175B6050090A488 /* GetWerk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetWerk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F917C7F82175B6050090A488 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F917C7FA2175B6050090A488 /* GWFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GWFeedViewController.swift; sourceTree = "<group>"; };
@@ -83,8 +87,10 @@
 			children = (
 				F917C7F82175B6050090A488 /* AppDelegate.swift */,
 				F917C7FA2175B6050090A488 /* GWFeedViewController.swift */,
-				F917C8182175B9480090A488 /* GWFeedCollectionViewCell.xib */,
 				F917C81A2175B98F0090A488 /* GWFeedCollectionViewCell.swift */,
+				269EAD142175FDEF005A2192 /* GWDetailsFeedCollectionViewCell.swift */,
+				F917C8182175B9480090A488 /* GWFeedCollectionViewCell.xib */,
+				269EAD122175FD9B005A2192 /* DetailsFeedCollectionViewCell.xib */,
 				F917C7FC2175B6050090A488 /* Main.storyboard */,
 				F917C7FF2175B6070090A488 /* Assets.xcassets */,
 				F917C8012175B6070090A488 /* LaunchScreen.storyboard */,
@@ -188,6 +194,7 @@
 				F917C8002175B6070090A488 /* Assets.xcassets in Resources */,
 				F917C8192175B9480090A488 /* GWFeedCollectionViewCell.xib in Resources */,
 				F917C7FE2175B6050090A488 /* Main.storyboard in Resources */,
+				269EAD132175FD9B005A2192 /* DetailsFeedCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +215,7 @@
 				F917C7FB2175B6050090A488 /* GWFeedViewController.swift in Sources */,
 				F917C81B2175B98F0090A488 /* GWFeedCollectionViewCell.swift in Sources */,
 				F917C7F92175B6050090A488 /* AppDelegate.swift in Sources */,
+				269EAD152175FDEF005A2192 /* GWDetailsFeedCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
