@@ -9,6 +9,8 @@
 import UIKit
 
 class GWFeedViewController: UIViewController {
+
+    let totalHorizontalPadding : CGFloat = 24.0;//8*3
     
     @IBOutlet var feedCollectionView: UICollectionView!
     
@@ -23,6 +25,9 @@ class GWFeedViewController: UIViewController {
 }
 
 extension GWFeedViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 3
     }
@@ -35,7 +40,8 @@ extension GWFeedViewController: UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150.0, height: 240.0)
+        let cellWidth = (UIScreen.main.bounds.size.width - totalHorizontalPadding) / 2.0;
+        return CGSize(width: cellWidth, height: cellWidth)
     }
     
 }

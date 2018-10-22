@@ -46,7 +46,7 @@ extension GWFeedCollectionViewCell: UICollectionViewDataSource, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150.0, height: 240.0)
+        return self.bounds.size;
     }
     
     
