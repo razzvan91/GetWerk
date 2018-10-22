@@ -13,7 +13,7 @@ class GWDetailsFeedCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var cellView: UIView!
     
     override func awakeFromNib() {
-        
+        dsa
     }
     
 }
